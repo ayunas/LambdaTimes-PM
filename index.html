@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/index.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" async></script> -->
-    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" async></script>
+    <script src="Tabs.js" async></script>
+    <!-- <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js" async></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/weather/0.0.2/weather.min.js" async></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" -->
     <!-- integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async></script> -->
@@ -27,98 +28,187 @@
             <nav>
                 <span>TRENDING TOPICS: </span>
                 <div class='a-tags'>
-                    <a href="#" class="all">ALL</a>
-                    <a href="#" class="JAVASCRIPT">JAVASCRIPT</a>
-                    <a href="#" class="PYTHON">PYTHON</a>
-                    <a href="#" class="AWS">AWS</a>
-                    <a href="#" class="GCP">GCP</a>
-                    <a href="#" class="BOOTSTRAP">BOOTSTRAP</a>
+                    <a href="#" data-tab="all">ALL</a>
+                    <a href="#" data-tab="js">JAVASCRIPT</a>
+                    <a href="#" data-tab="python">PYTHON</a>
+                    <a href="#" data-tab="aws">AWS</a>
+                    <a href="#" data-tab="gcp">GCP</a>
+                    <a href="#" data-tab="bootstrap">BOOTSTRAP</a>
                 </div>
             </nav>
         </header>
 
         <section class='cards'>
             <article class="card" data-tab="js">
-                <div class="headline">ES8 (or ES2017) – What’s New in JavaScript?</div>
-                <div class="author">V Keerti Kotaru</div>
-            </article>
-            <article class="card" data-tab="js">
-                <div class="headline">What is the NaN type in JavaScript</div>
+                <div class="headline"><a
+                        href="https://medium.com/edge-coders/whats-new-in-es2017-or-es8-for-javascript-40352b089780"
+                        target="_blank">ES8
+                        (or ES2017) – What’s New in JavaScript?</a></div>
                 <div class="author">
                     <img
                         src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
-                    <span>Tim Knight</span>
+                    <div class="author">Trey Huffine</div>
                 </div>
             </article>
             <article class="card" data-tab="js">
-                <div class="headline">Javascript's three dots ( ... ): Spread vs rest operators</div>
-                <div class="author">Joy Warugu</div>
-            </article>
-            <article class="card" data-tab="python">
-                <div class="headline">Python 2 EOL: How to Survive the End of Python 2</div>
-                <div class="author">Serdar Yegulalp</div>
-            </article>
-            <article class="card" data-tab="aws">
-                <div class="headline">The Unbelievable Power of Amazon's Cloud</div>
-                <div class="author">Robinson Meyer</div>
-            </article>
-            <article class="card" data-tab="aws">
-                <div class="headline">Amazon AWS: Complete business guide to the world's largest provider of cloud
-                    services</div>
-                <div class="author">Scott Fulton</div>
-            </article>
-            <article class="card" data-tab="gcp">
-                <div class="headline">What Google Cloud Platform is and why you’d use it</div>
-                <div class="author">Scott Fulton</div>
-            </article>
-            <article class="card" data-tab="gcp">
-                <div class="headline">Top 7 Advantages of Choosing Google Cloud Hosting</div>
-                <div class="author">Brian Jackson</div>
-            </article>
-            <article class="card" data-tab="bootstrap">
-                <div class="headline">Bootstrap 5: Get a Sneak Peak at all the New Features
+                <div class="headline"><a href="https://timmknight.github.io/2016/what-is-NaN-in-JavaScript/"
+                        target="_blank">What is the
+                        NaN type in JavaScript</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Tim Knight</div>
                 </div>
-                <div class="author">Rod Walksalot</div>
-            </article>
-            <article class="card" data-tab="bootstrap">
-                <div class="headline">What is Bootstrap and How Do I Use It?</div>
-                <div class="author">Tania Rascia</div>
-            </article>
-            <article class="card" data-tab="aws">
-                <div class="headline">AWS Lambda Go vs. Node.js performance benchmark: updated</div>
-                <div class="author">Tim Nolet</div>
-            </article>
-            <article class="card" data-tab="gcp">
-                <div class="headline">I’m Leaving Google — Here’s the Real Deal Behind Google Cloud</div>
-                <div class="author">Amir Hermelin</div>
             </article>
             <article class="card" data-tab="js">
-                <div class="headline">10 Things You Will Eventually Learn About JavaScript Projects</div>
-                <div class="author">TheFrontendCat</div>
+                <div class="headline"><a
+                        href="https://scotch.io/bar-talk/javascripts-three-dots-spread-vs-rest-operators543"
+                        target="_blank">Javascript's
+                        three dots ( ... ): Spread vs rest operators</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Joy Warugu</div>
+                </div>
+
             </article>
             <article class="card" data-tab="python">
-                <div class="headline">Python vs (and) R for Data Science</div>
-                <div class="author">Brian Ray</div>
+                <div class="headline"><a
+                        href="https://www.infoworld.com/article/3365221/python-2-end-of-life-how-to-survive-the-end-of-python-2.html"
+                        target="_blank">Python
+                        2 EOL: How to Survive the End of Python 2</a></div>
+                <div class="author"></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Serdar Yegulalp</div>
+                </div>
+            </article>
+            <article class="card" data-tab="aws">
+                <div class="headline"><a
+                        href="https://www.theatlantic.com/technology/archive/2015/04/the-unbelievable-power-of-amazon-web-services/391281/"
+                        target="_blank">The Unbelievable Power of Amazon's Cloud</a></div>
+                <div class="author"></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Robinson Meyer</div>
+                </div>
+            </article>
+            <article class="card" data-tab="aws">
+                <div class="headline"><a
+                        href="https://www.zdnet.com/article/amazon-aws-everything-you-should-know-about-the-largest-cloud-provider/"
+                        target="_blank">
+                        Amazon AWS: Complete business guide to the world's largest provider of cloud services
+                    </a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Scott Fulton</div>
+                </div>
+
+            </article>
+            <article class="card" data-tab="gcp">
+                <div class="headline"><a
+                        href="https://www.zdnet.com/article/what-google-cloud-platform-is-and-why-youd-use-it/"
+                        target="_blank">What Google Cloud Platform is and why you’d use it</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Scott Fulton</div>
+                </div>
+
+            </article>
+            <article class="card" data-tab="gcp">
+                <div class="headline"><a href="https://kinsta.com/blog/google-cloud-hosting/" target="_blank">Top 7
+                        Advantages of Choosing Google Cloud Hosting</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Brian Jackson</div>
+                </div>
+            </article>
+            <article class="card" data-tab="python">
+                <div class="headline"><a
+                        href="https://medium.com/free-code-camp/what-can-you-do-with-python-the-3-main-applications-518db9a68a78"
+                        target="_blank">What exactly can you do with Python? Here are Python’s 3 main applications.</a>
+                </div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Rod Walksalot</div>
+                </div>
             </article>
             <article class="card" data-tab="bootstrap">
-                <div class="headline">Learn Bootstrap 4 in 30 minutes by building a landing page website</div>
-                <div class="author">Said Hayani</div>
+                <div class="headline"><a href="https://www.taniarascia.com/what-is-bootstrap-and-how-do-i-use-it/"
+                        target="_blank">What is Bootstrap and How Do I Use It?</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Tania Rascia</div>
+                </div>
+            </article>
+            <article class="card" data-tab="aws">
+                <div class="headline"><a
+                        href="https://hackernoon.com/aws-lambda-go-vs-node-js-performance-benchmark-1c8898341982"
+                        target="_blank">AWS Lambda Go vs. Node.js performance benchmark: updated</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Tim Nolet</div>
+                </div>
+            </article>
+            <article class="card" data-tab="gcp">
+                <div class="headline"><a
+                        href="https://blog.usejournal.com/im-leaving-google-and-here-s-the-real-deal-behind-google-cloud-1b86513be01b"
+                        target="_blank">I’m Leaving Google — Here’s the Real Deal Behind Google Cloud</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Amir Hermelin</div>
+                </div>
+            </article>
+            <article class="card" data-tab="js">
+                <div class="headline"><a
+                        href="https://blog.usejournal.com/10-things-you-will-eventually-learn-about-javascript-projects-efd7646b958a"
+                        target="_blank">10 Things You Will Eventually Learn About JavaScript Projects</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">TheFrontendCat</div>
+                </div>
+            </article>
+            <article class="card" data-tab="python">
+                <div class="headline"><a
+                        href="https://blog.usejournal.com/python-vs-and-r-for-data-science-833b48ccc91d"
+                        target="_blank">Python vs (and) R for Data Science</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Brian Ray</div>
+                </div>
             </article>
             <article class="card" data-tab="bootstrap">
-                <div class="headline">Understanding the Bootstrap 3 Grid System</div>
-                <div class="author">Chris Sevilleja</div>
+                <div class="headline"><a
+                        href="https://www.freecodecamp.org/news/learn-bootstrap-4-in-30-minute-by-building-a-landing-page-website-guide-for-beginners-f64e03833f33/"
+                        target="_blank">Learn Bootstrap 4 in 30 minutes by building a landing page website</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Said Hayani</div>
+                </div>
+            </article>
+            <article class="card" data-tab="bootstrap">
+                <div class="headline"><a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system"
+                        target="_blank">Understanding the Bootstrap 3 Grid System</a></div>
+                <div class="author">
+                    <img
+                        src="https://www.ekahiornish.com/wp-content/uploads/2018/07/default-avatar-profile-icon-vector-18942381.jpg">
+                    <div class="author">Chris Sevilleja</div>
+                </div>
             </article>
         </section>
-
-
-
-
-
     </main>
-
-
-
-
 </body>
 
 </html>

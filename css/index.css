@@ -8,6 +8,7 @@ main#wrapper {
   margin: 0 auto;
   width: 95vw;
   font-size: 1.6rem;
+  padding: 10px;
 }
 span {
   display: inline-block;
@@ -44,6 +45,10 @@ header nav .a-tags a {
   padding: 0 7px;
   background-color: black;
 }
+header nav .a-tags .select {
+  background-color: white;
+  color: black;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +64,10 @@ header nav .a-tags a {
   margin: 10px;
   width: 300px;
   height: 150px;
+}
+.cards article a {
+  text-decoration: none;
+  color: black;
 }
 .cards article div.author {
   display: flex;
