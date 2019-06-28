@@ -45,14 +45,35 @@ header nav .a-tags a {
   padding: 0 7px;
   background-color: black;
 }
+header nav .a-tags a:hover {
+  text-decoration: underline;
+}
 header nav .a-tags .select {
   background-color: white;
   color: black;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel img {
+  width: 600px;
+  height: 200px;
+}
+.carousel button #leftBtn {
+  position: relative;
+  left: 20;
+}
+.carousel button #rightBtn {
+  position: relative;
+  right: 20;
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .cards article {
   display: flex;
