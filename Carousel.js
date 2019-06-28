@@ -18,10 +18,24 @@ class Carousel {
             // }
         })
 
-        console.log(this.index);
+
         // this.index = 0;  //index of the image with the dataset.tab === tab.dataset.tab
         // this.images[this.index].style.display = 'block';
+        // setInterval(() => { if (this.index <= this.images.length) { this.index += 1 } else { this.index = 0; }; this.images[this.index].classList.remove('hidden'); }, 3000);
+
+        // this.images[this.index].classList.remove('hidden');
+
+        // setInterval(() => {
+        //     this.images[this.index].style.display = 'hidden';
+        //     if (this.index < this.images.length - 1) {
+        //         this.index += 1;
+        //     } else {
+        //         this.index = 0;
+        //     }
+        // }, 1000);
+
         this.images[this.index].classList.remove('hidden');
+
         this.button.forEach(button => button.addEventListener('click', () => this.rotate(button)));
 
     }
