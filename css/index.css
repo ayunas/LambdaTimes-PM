@@ -61,6 +61,9 @@ header nav .a-tags .select {
   width: 600px;
   height: 200px;
 }
+.carousel .hidden {
+  display: none;
+}
 .carousel button #leftBtn {
   position: relative;
   left: 20;
